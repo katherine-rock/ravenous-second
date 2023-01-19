@@ -9,6 +9,7 @@ import Yelp from '../../util/Yelp';
 function App() {
 
   const [businesses, setBusinesses ] = useState([]);
+  const [corsError, setCorsError ] = useState(false);
 
   const searchYelp = (term, location, sortBy) => {
     Yelp.search(term, location, sortBy)
@@ -16,13 +17,14 @@ function App() {
         setBusinesses([...businesses])
       }
       )
+      .catch(setCorsError(true))
   }
 
   return (
     <div className="App">
       <h1>Ravenous</h1>
       <SearchBar searchYelp={searchYelp}/>
-      <CorsError />
+      <CorsError corsError={corsError} />
       <BusinessList businesses={businesses} />
     </div>
   );

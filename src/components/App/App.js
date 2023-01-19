@@ -19,17 +19,23 @@ function App() {
       .then(businesses => {
         setBusinesses([...businesses])
       }
-      ).then(
-        checkApiKey(apiKey)
       )
-      .catch(setCorsError(true))
+      // The following runs if there are any problems, which there are - if apiKey has an error, then the API call will not be valid and therefore there will be an error. Can I mix this up and do .catch first 
+      // No - I need to use catch to run a function that checks the error type
+      .catch(checkForErrorType(apiKey))
   }
 
-  const checkApiKey = (apiKey) => {
+  const checkForErrorType = (apiKey) => {
+    console.log('The checkForErrorType function has run')
     if (apiKey === 'YourAPIKeyHere') {
       setApiKeyError(true)
+      console.log('TRUE for ApiKeyError')
+      console.log('Value of apiKey: ')
+      console.log(apiKey)
+      setCorsError(false)
     } else {
       setApiKeyError(false)
+      setCorsError(true)
     }
   }
 

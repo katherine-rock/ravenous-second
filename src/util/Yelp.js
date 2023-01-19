@@ -30,7 +30,7 @@ const Yelp = {
                         })
                     }
                 }
-            )
+            ).catch(console.log('You might have a CORS error'))
     }
 }
 

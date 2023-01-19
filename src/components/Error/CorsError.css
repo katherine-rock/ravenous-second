@@ -1,0 +1,37 @@
+.CorsErrorSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    height: 25rem;
+    margin: 1rem;
+    text-align: center;
+}
+
+.CorsErrorText {
+    line-height: 1.6rem;
+}
+
+.CorsErrorText span {
+    text-decoration: underline;
+}
+
+.CorsErrorSection h2 {
+    font-size: 1.5rem;
+}
+
+.CorsErrorButton a {
+    border-radius: 4px;
+    padding: .72rem 1.7rem;
+    background-color: #cca353;
+    color: #ffffff;
+    font-weight: 600;
+    transition: background-color .5s;
+    font-size: 1.4rem;
+    text-decoration: none;
+  }
+
+.CorsErrorButton a:hover {
+    cursor: pointer;
+    background-color: #a7874b;
+}

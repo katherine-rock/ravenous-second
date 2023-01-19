@@ -1,0 +1,37 @@
+.ApiKeyErrorSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    height: 25rem;
+    margin: 1rem;
+    text-align: center;
+}
+
+.ApiKeyErrorText {
+    line-height: 1.6rem;
+}
+
+.ApiKeyErrorText span {
+    text-decoration: underline;
+}
+
+.ApiKeyErrorSection h2 {
+    font-size: 1.5rem;
+}
+
+.ApiKeyErrorButton a {
+    border-radius: 4px;
+    padding: .72rem 1.7rem;
+    background-color: #cca353;
+    color: #ffffff;
+    font-weight: 600;
+    transition: background-color .5s;
+    font-size: 1.4rem;
+    text-decoration: none;
+  }
+
+.ApiKeyErrorButton a:hover {
+    cursor: pointer;
+    background-color: #a7874b;
+}

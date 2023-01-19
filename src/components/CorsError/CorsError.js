@@ -1,10 +1,8 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import './CorsError.css'
 
 const CorsError = (props) => {
-    // const hasError = corsError
     if (props.corsError) {
-        console.log('This is from CorsError.js')
         return (
             <div className="CorsErrorSection">
                 <div className="CorsErrorText">

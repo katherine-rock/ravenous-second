@@ -1,6 +1,8 @@
 import React from 'react';
 import './CorsError.css'
 
+// If the API response is bad because the user has not enabled access to the CORS Anywhere demo server, user will be prompted to visit the link 
+
 const CorsError = (props) => {
     if (props.corsError) {
         return (

@@ -2,6 +2,8 @@ import { render } from '@testing-library/react';
 import React from 'react'; 
 import './Business.css'
 
+// Displays each individual business as a card with image, address, category and rating
+
 class Business extends React.Component {
     render() {
         const { business } = this.props;

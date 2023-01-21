@@ -1,7 +1,8 @@
 import React from 'react';
 import './BusinessList.css';
-
 import Business from '../Business/Business';
+
+// Maps through list of returned businesses from API call
 
 class BusinessList extends React.Component {
   render() {

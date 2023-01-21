@@ -1,8 +1,6 @@
 import React from 'react';
 import './SearchBar.css';
 
-
-
 class SearchBar extends React.Component {
     constructor(props) {
         super(props);
@@ -24,7 +22,7 @@ class SearchBar extends React.Component {
         }
     }
 
-    // Creates the top 3 list item menu options for sorting results
+    // Creates the 3 list item menu options for sorting results at the top of the search bar
     renderSortByOptions() {
         return Object.keys(this.sortByOptions).map(sortByOption => {
            let sortByOptionValue = this.sortByOptions[sortByOption];
@@ -36,7 +34,7 @@ class SearchBar extends React.Component {
         });
     }
 
-    // Set currently selected sort option as active for styling
+    // Sets the currently selected sort option as active for styling
     getSortByClass(sortByOption) {
         if (this.state.sortBy === sortByOption) {
             return 'active';

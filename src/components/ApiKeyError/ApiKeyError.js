@@ -1,9 +1,10 @@
 import React from 'react';
 import './ApiKeyError.css'
 
+// If the API response is bad because the user has not updated the Yelp.js file with their API key, user will be prompted with instructions and link to generate the key
+
 const ApiKeyError = (props) => {
     if (props.apiKeyError) {
-        console.log('This is from ApiKeyError.js')
         return (
             <div className="ApiKeyErrorSection">
                 <div className="ApiKeyErrorText">

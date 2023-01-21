@@ -2,19 +2,26 @@
     display: flex;
     flex-direction: column;
     justify-content: top;
+    min-height: 11rem;
+    margin: auto;
     align-items: top;
-    height: 25rem;
-    margin: 1rem;
     text-align: center;
     margin-top: -7rem;
+    margin-bottom: 1rem;
+    border: 4px solid #cca353;
+    border-radius: 4px;
+    box-shadow: black; 
+    max-width: 60%;
 }
 
 .CorsErrorText {
     line-height: 1.6rem;
+    padding: 1rem 1rem 0 1rem;
 }
 
 .CorsErrorText span {
     text-decoration: underline;
+    overflow-wrap: break-word;
 }
 
 .CorsErrorSection h2 {
@@ -35,4 +42,19 @@
 .CorsErrorButton a:hover {
     cursor: pointer;
     background-color: #a7874b;
+}
+
+@media only screen and (min-width: 561px) and (max-width: 1200px) {
+    .CorsErrorSection { 
+    min-height: 14rem;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    .CorsErrorSection {
+        max-width: 90%;
+        min-height: 16rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
 }

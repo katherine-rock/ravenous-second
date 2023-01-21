@@ -10,7 +10,8 @@ const ApiKeyError = (props) => {
                 <div className="ApiKeyErrorText">
                     <h2>Oops!</h2>
                     <p>It looks like you have not added your API Key to the source code.</p>
-                    <p>If you need to create a new API Key, please visit <span>https://www.yelp.com/developers/v3/manage_app</span></p>
+                    <p>If you need to create a new API Key, please visit </p>
+                    <p className="link">https://www.yelp.com/developers/v3/manage_app</p>
                     <p>You will need to add your API Key in the Yelp.js file in src/util</p>
                     <br />
                 </div>

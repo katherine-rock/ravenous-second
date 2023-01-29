@@ -1,21 +1,32 @@
 # Ravenous
 
-This app is a practice exercise from Codecademy's course [Create a Front-End App with React](https://www.codecademy.com/learn/paths/build-web-apps-with-react). 
+This app is a practice exercise from Codecademy's course [Create a Front-End App with React](https://www.codecademy.com/learn/paths/build-web-apps-with-react). Additional components have been added to prompt the user if they have not added an API Key or enabled the Heroku demo server. The header has been updated with larger text and the responsive layout has been refined to also suit tablet screens.
 
 ## Purpose
-This app allows users to enter a cuisine type or food and location and search for relevant restaurants, markets or shops. The user can sort the results by 'Best Match' to their search terms, 'Highest Rated' adjusted rating from customers, or 'Most Reviewed'. 
+This app allows users to enter a cuisine type or food and location and search for relevant restaurants, markets or shops. The user can sort the results by 'Best Match' to their search terms, 'Highest Rated' adjusted rating from customers, or 'Most Reviewed'.
 
 ## Yelp Fusion API
-The app uses data from the Yelp Fusion API 'businesses search' endpoint. 
+The app uses data from the Yelp Fusion API 'businesses search' endpoint.
 
 Documentation: [https://docs.developer.yelp.com/reference/v3_business_search](https://docs.developer.yelp.com/reference/v3_business_search)
 
 ## Screenshots
-Initial screen prior to entering any search terms:
-!['Search screen'](./public/Screenshots/Home_page.png)
 
-Results screen after entering search terms: 
-!['Results screen'](./public/Screenshots/Search_Results.png)
+### Desktop
+
+!['Results screen - desktop view'](./public/Screenshots/Search_Results_Desktop.png)
+
+### Tablet
+
+!['Results screen - tablet view'](./public/Screenshots/Search_Results_Tablet.png)
+
+### Mobile
+
+!['Results screen - mobile view'](./public/Screenshots/Search_Results_Mobile.png)
+
+### Error
+
+!['Error message'](./public/Screenshots/Error_APIKey.png)
 
 ## Instructions to use the app locally
 1. Clone the code from the repo

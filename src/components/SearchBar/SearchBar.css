@@ -75,7 +75,19 @@
     cursor: pointer;
     background-color: #a7874b;
   }
-  
+
+  /* For tablet screens  */
+  @media only screen and (min-width: 561px) and (max-width: 1200px) {
+    .SearchBar-fields input {
+      margin: 0 1rem .86rem 1rem;
+    }
+
+    .SearchBar-fields {
+      margin: 0 2rem 2rem 2rem;
+    }
+  }
+
+  /* For mobile screens less than 560px */
   @media only screen and (max-width: 560px) {
     .SearchBar {
       background-image: url('./background_search_mobile.jpg');
@@ -96,3 +108,4 @@
       margin-bottom: .86rem;
     }
   }
+

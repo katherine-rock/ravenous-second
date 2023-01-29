@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import logo from '../../logo.svg';
 import './App.css';
 import BusinessList from '../BusinessList/BusinessList';
 import SearchBar from '../SearchBar/SearchBar';
@@ -19,9 +18,13 @@ function App() {
       .then(businesses => {
         setBusinesses([...businesses])
       }
+      ).then(
+        setCorsError(false)
+      ).then(
+        setApiKeyError(false)
       )
      // If the API call is bad, call a function to check for the error type - missing API Key or CORS error. 
-      .catch(checkForErrorType(apiKey))
+      .catch(() => checkForErrorType(apiKey))
   }
 
   const checkForErrorType = (apiKey) => {

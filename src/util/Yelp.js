@@ -30,7 +30,7 @@ const Yelp = {
                         })
                     }
                 }
-            ).catch(console.log('You might have a CORS error'))
+            ).catch(console.log('Error in retrieving businesses data from Yelp API. API Key may be missing or demo server may need to be activated.'))
     }
 }
 
